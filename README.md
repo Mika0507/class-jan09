@@ -5,9 +5,9 @@
 
 Belén Alonso Peral
 
-# H2
+## H2
 
-# My first Cool comment
+## My first Cool comment
 
 
 Este es mi primer archivo que voy a cambiar en Github :)
