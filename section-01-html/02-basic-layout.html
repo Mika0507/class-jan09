@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meta tags</title>
+    <title>Formulario</title>
 </head>
 <body>
-    <h1>Meta tag Website</h1>
+    
+    <form action="">
+
+        <label for="name">Name and Lastname</label>
+        <input type="text" id="name" name="name" max="20" placeholder="Your name"> <br>
+
+        <label for="age">Your age</label>
+        <input type="number" id="age" name="age" min="0" max="18"> <br>
+
+        <label for="message">Message</label>
+        <textarea type="textarea" id="message" name="message" placeholder="Your favorite groups" rows="5" cols="10"></textarea> <br>
+
+        <label for="dropdown">Your favorite gender</label>
+        <select name="gender">
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="country">Country</option>
+        </select> <br>
+
+        <input type="submit" onclick="alert('¡Hola!')" name="button" value="Click me!">
+
+
+
+    </form>
+
 </body>
 </html>
