@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* Las características de la tipografía son: size: 10px, line height: 3.5em, y un weight:300. */
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    line-height: 3.5em;
+    font-weight: 300;
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+    margin: 0;
+}
+
+.h1-logo{
+    font-size: 9em;
+    text-align: center;
+    transform: uppercase;
+}
+
+.h2-logo{
+    color: #fff;
+    text-shadow: #020819 8px -20px 9px;
+    font-size: 5em;
+    text-align: center;
+    transform: uppercase;
+    line-height: 4em;
+}
+
+.quote{
+    font-size: 2.5em;
+}
+
+h3{
+    font-size: 4.2em;
+    text-align: center;
+    line-height: 1em;
+}
+
+h4{
+    font-size: 1.5em;
+    letter-spacing: 0.4px;
+    line-height: 1em;
+}
+
+h5{
+    font-size: 1.2em;
+    line-height: 1em;
+}
+
+.nav-bar{
+    background-color: rgb(25, 33, 41);
+}
+
+.li-bar{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.cabecera-logo{
+    height: 650px;
+    /* comprobar el funcionamiento de las imagenes como fondo */
+    background-image: url(https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg.);
+    position: 0.0;
+    repeat: no-repeat;
+    size: cover;
+}
+
+.container1{
+    background-color: #020819;
+    color: #fff;
+}
+
+.content-0 p{
+    font-size: 2em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.content-0 a{
+    background-color: rgb(67, 163, 230);
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.content1{
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.content1 img{
+    width: 125px;
+}
+
+.container3{
+    background-color: #020819;
+}
+
+.section-text{
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.h3-team-section{
+    color: #fff;
+}
+
+.container3 p{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+}
+
+#team-section img{
+    width: 250px;
+    height: 180px;
+}
+
+.footer-content{
+    background-color: #020819;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    align-items: center;
+    font-size: 1.9em;
+}
+
+.footer ul{
+    padding: 0;
+}
+
+.footer h5{
+    color: #fff;
+}
+
+.address{
+    font-style: normal;
+    font-size: 0.8em;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.li-footer{
+    color: rgb(67, 163, 230);
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
