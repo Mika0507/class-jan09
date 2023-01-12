@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias Queries</title>
+
+    <style>
+
+        @media (min-width: 1025px) and (max-width: 1820px){
+            body{
+                background-color: cadetblue;
+            }
+            .group1{
+                display: block;
+                font-size: 68px;
+                text-align: center;
+                color: darkblue;
+            }
+
+            .group2, .group3{
+                display: none;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px){
+            body{
+                background-color: burlywood;
+            }
+            .group2{
+                display: block;
+                font-size: 68px;
+                text-align: center;
+                color: rgb(205, 4, 4);
+            }
+            .group1, .group3{
+                display: none;
+            }
+        }
+
+        @media (min-width: 320px) and (max-width: 768px){
+            
+            body{
+                background-color: black;
+            }
+            .group3{
+                display: block;
+                font-size: 68px;
+                text-align: center;
+                color: rgb(251, 243, 8);
+            }
+            .group1, .group2{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+        <h1 class="group1">Vetusta Morla</h1>
+
+        <h1 class="group2">Aurora</h1>
+
+        <h1 class="group3">AVIVA</h1>
+
+</body>
+</html>
