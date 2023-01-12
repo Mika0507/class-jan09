@@ -51,7 +51,7 @@ h1{
 }
 
 .list-ingredients ul li{
-    list-style: none;
+    list-style-type: "- ";
     font-size: 24px;
 }
 
