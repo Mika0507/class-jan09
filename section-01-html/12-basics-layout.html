@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables en CSS</title>
+
+    <style>
+
+        body{
+            width: 100vw;
+            height: 300px;
+        }
+       
+
+        .box{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: box 2s ease-in-out 1s alternate both running 4;
+        }
+
+        @keyframes box {
+            0%{
+                width: 100px;
+                height: 100px;
+                top: 0;
+                left:0;
+            }
+            25%, 75%{
+                width: 200px;
+                height: 200px;
+                background-color: #222;  
+            }
+
+            50%, 100%{
+                width: 20px;
+                height: 20px;
+                background-color: green;
+            }
+        }
+
+        /* .box:hover{
+            display: inline-block;
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: blue;
+            
+        }
+
+        .box:hover{
+            margin: 0 100px;
+        } */
+
+
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>
