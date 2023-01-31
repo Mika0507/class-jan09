@@ -61,6 +61,7 @@ header{
     border-radius: 14px;
     font-size: 20px;
     color: #fff;
+    cursor: pointer; 
   }
   .sections-green{
     background-color: green;
