@@ -1,48 +1,36 @@
-<script setup>
-
-</script>
-
-
 <template>
   <div class="tweet">
-    <img
-      src="https://i.imgur.com/9yw1Fyw.jpg"
-      class="profile"
-      alt="profile"
-    />
+    <ProfileImage :imageUrl="userPic" />
 
     <div class="body">
       <div class="top">
-        <span class="user">
-          <span class="name">Ironhack</span>
-          <span class="handle">@ironhack</span>
-        </span>
-
-        <span class="timestamp">Nov 30, 2020</span>
+        <User :userName="userName" :userHandle="userHandle" />
+        <TimeStamp :timeStamp="tweetTimeStamp" />
       </div>
 
-      <p class="message">
-        On December 7th, we will be hosting a #webinar that will introduce you
-        to #SQL! Are you ready? 🚀
-      </p>
+      <Message :postMessage="postMessage" />
 
-      <div class="actions">
-        <!-- Font Awesome icons -->
-        <i class="far fa-comment"></i>
-        <i class="fas fa-retweet"></i>
-        <i class="far fa-heart"></i>
-        <i class="fas fa-share"></i>
-      </div>
+      <Actions />
     </div>
 
     <i class="fas fa-ellipsis-h"></i>
   </div>
-  <!-- Crear varios componentes de cada seccion del tweet:
-  profileimage, user, timestamp, message, actions, y crear este template con props. para poder llamarlos en la página App -->
-  <!-- Creamos un script con los import de los componentes y luego creamos un prop que defina un tweet: Object, })  que esto es lo que vamos a llamar en App. mejor bindear, para que la información no se coja como string-->
 </template>
-
-
+<script setup>
+import { ref, reactive } from "vue";
+import ProfileImage from "./ProfileImage.vue";
+import User from "./User.vue";
+import TimeStamp from "./TimeStamp.vue";
+import Message from "./Message.vue";
+import Actions from "./Actions.vue";
+defineProps({
+  userPic: String,
+  userName: String,
+  userHandle: String,
+  tweetTimeStamp: String,
+  postMessage: String,
+});
+</script>
 <style scoped>
 a {
   color: #42b983;
